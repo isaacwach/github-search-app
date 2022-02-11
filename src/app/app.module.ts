@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { GitFormComponent } from './git-form/git-form.component';
 import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
+import { RepositoryComponent } from './repository/repository.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     HomeComponent,
     GitFormComponent,
-    UsersComponent
+    UsersComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
