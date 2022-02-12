@@ -8,10 +8,13 @@ import {UserService} from '../user.service'
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+  
 
   constructor(private userService: UserService) {
+    console.log("heey")
     this.userService.getProfileInfo().subscribe((profile =>{
-
+      console.log("meeee");
+      console.log(profile)
     }))
    }
 
