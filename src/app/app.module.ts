@@ -10,8 +10,9 @@ import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { RepositoryComponent } from './repository/repository.component';
 import {UserService} from './user.service';
-// import { Injectable } from '@angular/core';
+//import { Injectable } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -20,14 +21,15 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     GitFormComponent,
     UsersComponent,
-    RepositoryComponent
+    RepositoryComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    // Injectable,
-    HttpClientModule
+    //Injectable,
+    HttpClientModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

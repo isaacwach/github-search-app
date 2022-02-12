@@ -1,7 +1,18 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators'
+import 'rxjs/Rx';
+import 'rxjs';
+
+import 'rxjs/add/observable/throw';
+
+// Operators
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/switchMap';
+import 'rxjs/add/operator/toPromise';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +27,7 @@ export class UserService {
    }
    getProfileInfo(){
      return this.httpClient.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret)
-     .pipe(map((response: any)=>response.json()))
+     .pipe(map((response: any)=>response));
+     
    }
 }
