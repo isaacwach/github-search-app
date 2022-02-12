@@ -9,6 +9,9 @@ import { GitFormComponent } from './git-form/git-form.component';
 import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { RepositoryComponent } from './repository/repository.component';
+import {UserService} from './user.service';
+// import { Injectable } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,8 +26,10 @@ import { RepositoryComponent } from './repository/repository.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    // Injectable,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
