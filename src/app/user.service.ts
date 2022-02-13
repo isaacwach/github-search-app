@@ -24,7 +24,7 @@ export class UserService {
   private clientId: '4003015ac715af0ee7ba';
   private clientSecret: 'd1e927e3c82e0f209ca911927c257eb57cf91094';
   constructor(private httpClient:HttpClient) {
-    this.username='';
+    this.username='isaacwach';
    }
    getProfileInfo(){
      var profile= this.httpClient.get("https://api.github.com/users/" + this.username)

@@ -1,1 +1,14 @@
 <app-git-form></app-git-form>
+
+<div>
+    <h2>Github Users</h2>
+    <div *ngIf="profile">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                {{profile.name}}<small>{{profile.login}}</small>
+                , works at {{profile.company}}
+            </div>
+            
+        </div>
+    </div>
+</div>
