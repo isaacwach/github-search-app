@@ -7,8 +7,8 @@ import {UserService} from '../user.service'
   styleUrls: ['./repository.component.css']
 })
 export class RepositoryComponent implements OnInit {
-
-  repos: any[];
+  repos:any[];
+  repository: {name: string; full_name: string; description: string; language: string; homepage: string; html_url: string;}
 
   constructor(private userService: UserService) {
 
