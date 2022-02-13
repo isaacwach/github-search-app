@@ -36,5 +36,6 @@ export class UserService {
    getProfileRepos(){
     var repos= this.httpClient.get("https://api.github.com/users/" + this.username + "/repos")
     .pipe(map((response: any)=>response));
+    return repos;
    }
 }
