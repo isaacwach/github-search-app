@@ -3,6 +3,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.body{
-    width: 400px;
+.card-body{
+    background-color: aqua;
+    min-width: 400px;
+    margin-top: 20px;
+    max-width: 400px;
+}
+.repository{
+    padding-left: 50px;
+    padding-right: 50px;
 }
