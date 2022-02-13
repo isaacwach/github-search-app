@@ -6,3 +6,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.card {
+    background-color: white;
+    color: white;
+    border: 2px solid orangered;
+}
