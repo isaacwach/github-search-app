@@ -1,4 +1,5 @@
-<app-git-form></app-git-form>
+<body>
+    <app-git-form></app-git-form>
 
 <div class="users">
     <h2>Pfofile Details</h2>
@@ -7,8 +8,11 @@
         <div class="card-body">
           <h5 class="card-title">Account Name: {{profile.name}}</h5>
           <p class="card-text">Username: {{profile.login}}</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">Userbio: {{profile.bio}}</p>
+          <p class="card-text">Public repos: {{profile.public_repos}}</p>
+          <a href="{{profile.html_url}}" class="btn btn-primary">Go to Github</a>
         </div>
       </div>
 </div>
+</body>
 
