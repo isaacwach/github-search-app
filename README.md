@@ -2,7 +2,7 @@
 ## By Isaac Wachira
 ## Description
 The application is meant to enable users to access github accounts and repositories easily. A user enters a github username and the application displays the account details, and the details of all repositories in that account. 
-![Landing page photo](https://github.com/isaacwach/quotes-project/blob/master/src/assets/images/quotepage.png)
+![Landing page photo](https://github.com/isaacwach/github-search-app/blob/master/src/assets/images/gitserach-image.png)
 ## Author information
 I am a full stack developer, with impeccable skills in web development, UI design, and problem solving skills using algorithms. Besides, i have knowlege in enterprise development, financial accounting and business management.
 ## Setup/Installation Requirements
