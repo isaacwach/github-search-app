@@ -5,9 +5,20 @@
     background-image: url(https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbXB1dGVyc3xlbnwwfDB8MHxibGFja3w%3D&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 .card {
     background-color: white;
     color: white;
     border: 2px solid orangered;
+}
+.users{
+    padding-top: 30px;
+    padding-left: 100px;
+}
+.list{
+    justify-content: space-between;
+}
+.label-primary{
+    background-color: blue;
 }

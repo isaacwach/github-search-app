@@ -2,17 +2,30 @@
     <app-git-form></app-git-form>
 
 <div class="users">
-    <h2>Pfofile Details</h2>
-    <div class="card" style="width: 25rem;">
-        <img class="card-img-top" src="{{profile.avatar_url}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Account Name: {{profile.name}}</h5>
-          <p class="card-text">Username: {{profile.login}}</p>
-          <p class="card-text">Userbio: {{profile.bio}}</p>
-          <p class="card-text">Public repos: {{profile.public_repos}}</p>
-          <a href="{{profile.html_url}}" class="btn btn-primary">Go to Github</a>
+    <h2>Profile Details</h2>
+    <div class="row">
+        <div class="col">
+            <img class="card-img-top" src="{{profile.avatar_url}}" alt="Card image cap">
         </div>
-      </div>
+        <div class="col">
+            <h5 class="card-title">Account Name: {{profile.name}}</h5>
+            <p class="card-text">Username: {{profile.login}}</p>
+            <p class="card-text">Userbio: {{profile.bio}}</p>
+            <p class="card-text">Created at: {{profile.created_at}}</p>
+            <p class="card-text">Updated at: {{profile.updated_at}}</p>
+        </div>
+        <div class="col">
+            <p class="list">
+                <span class="label label-primary bg bg-primary">Public repos: {{profile.public_repos}}</span>
+                <span class="label label-default">Public Gists: {{profile.public_gists}}</span>
+                <span class="label label-success">Followers: {{profile.followers}}</span>
+                <span class="label label-warning">Following: {{profile.following}}</span>
+            </p>
+            <a href="{{profile.html_url}}" class="btn btn-primary">Go to Github</a>
+        </div>
+    </div>
 </div>
+
+
 </body>
 
