@@ -2,5 +2,7 @@
     height: 250px;
 }
 *{
-    background-color: aqua;
+    background-image: url(https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbXB1dGVyc3xlbnwwfDB8MHxibGFja3w%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
