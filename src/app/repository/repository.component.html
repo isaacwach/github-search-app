@@ -3,8 +3,9 @@
     <div class="all-cards">
         <div class="body" *ngFor="let repo of repos let i=index" >
             <div class="card-body">
-             <h5 class="card-title"> Repository Name: {{repo.name}}</h5>
-             <p class="card-text">Full Name: {{repo.full_name}}</p>
+             <h5 class="card-title"> <span>Repository Name:</span> {{repo.name}}</h5>
+             <p class="card-text"><span>Full Name:</span> {{repo.full_name}}</p>
+             <p class="card-text"><span>Description:</span> {{repo.description}}</p>
             </div>
          </div>
     </div>
