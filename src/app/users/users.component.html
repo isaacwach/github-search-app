@@ -1,14 +1,14 @@
 <app-git-form></app-git-form>
 
-<div>
-    <h2>Github Users</h2>
-    <div *ngIf="profile">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                {{profile.name}}<small>{{profile.login}}</small>
-                , works at {{profile.company}}
-            </div>
-            
+<div class="users">
+    <h2>Pfofile Details</h2>
+    <div class="card" style="width: 28rem;">
+        <img class="card-img-top" src="{{profile.avatar_url}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Account Name: {{profile.name}}</h5>
+          <p class="card-text">Username: {{profile.login}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-    </div>
+      </div>
 </div>
+
