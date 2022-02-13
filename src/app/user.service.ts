@@ -38,4 +38,7 @@ export class UserService {
     .pipe(map((response: any)=>response));
     return repos;
    }
+   updateProfile(username: string){
+     this.username= username
+   }
 }

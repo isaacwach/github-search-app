@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {UserService} from '../user.service'
+import { UsersComponent } from '../users/users.component';
 
 @Component({
   selector: 'app-git-form',
@@ -6,16 +8,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./git-form.component.css']
 })
 export class GitFormComponent implements OnInit {
-
-  searchName:string;
-  @Output() searchOutput = new EventEmitter<any>()
-  constructor() { }
+  
+  username: string;  
+  constructor(private userService: UserService) { }
+  findProfile() {
+    this.userService.updateProfile(this.username)
+    
+  }
 
   ngOnInit() {
   }
-  search(){
-    this.searchOutput.emit(this.searchName);
-    this.searchName = "";
-  }
+
 
 }

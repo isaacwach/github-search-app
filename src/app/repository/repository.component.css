@@ -1,0 +1,8 @@
+.all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.body{
+    width: 400px;
+}
