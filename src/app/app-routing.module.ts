@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'users', component: UsersComponent },
   { path: 'repository', component: RepositoryComponent },
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({
