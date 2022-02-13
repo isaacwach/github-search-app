@@ -4,7 +4,7 @@
     justify-content: space-between;
 }
 .card-body{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     min-width: 400px;
     margin-top: 20px;
     max-width: 400px;
@@ -12,7 +12,22 @@
 .repository{
     padding-left: 50px;
     padding-right: 50px;
+    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29tcHV0ZXJzfGVufDB8MHwwfGJsYWNrfA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
 }
 span{
     color: orangered;
+}
+.btn{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.repository h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
 }

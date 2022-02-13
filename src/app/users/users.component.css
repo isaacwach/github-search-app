@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+   
 }
 .card {
     background-color: white;
@@ -15,12 +16,22 @@
 .users{
     padding-top: 30px;
     padding-left: 100px;
+    padding-bottom: 50px;
 }
 .list{
     justify-content: space-between;
 }
-.label-primary{
-    background-color: blue;
+span.label-primary{
+    background: blue;
+}
+span.label-default{
+    background: gray;
+}
+span.label-success{
+    background: orangered;
+}
+span.label-warning{
+    background: greenyellow;
 }
 .container-fluid {
     padding-top: 50px;
@@ -40,4 +51,7 @@
      }
      .intro{
          text-align: center;
+     }
+     input{
+         background: white;
      }
